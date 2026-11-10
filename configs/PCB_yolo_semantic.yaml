@@ -1,0 +1,13 @@
+path: D:/pycharm/pythonProject/PCB_defect/data/pcb_reviewed_300
+train: images/train
+val: images/val
+test: images/test
+masks_dir: masks
+names:
+  0: background
+  1: missing_hole
+  2: mouse_bite
+  3: open_circuit
+  4: short
+  5: spur
+  6: spurious_copper

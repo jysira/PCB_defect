@@ -1,0 +1,15 @@
+# The Roboflow dataset must contain train/valid/test folders, each with
+# _annotations.coco.json and the corresponding images.
+path: C:/Users/曲敬悠/OneDrive/桌面/新建文件夹
+annotation_format: coco_polygon
+task: semantic_segmentation
+background: 0
+ignore_categories:
+  - PCB
+names:
+  1: missing_hole
+  2: mouse_bite
+  3: open_circuit
+  4: short
+  5: spur
+  6: spurious_copper
