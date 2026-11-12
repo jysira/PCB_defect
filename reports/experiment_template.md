@@ -1,6 +1,6 @@
 # 实验记录
 
-仅填写实际运行所得数据；`runs/train/*/results.csv` 和 `reports/metrics.json` 是指标来源。
+仅填写实际运行所得数据；`runs/01_detection/training/*/results.csv` 和 `reports/metrics.json` 是指标来源。
 
 | 实验 | 数据/预处理 | 模型 | imgsz | mAP50 | mAP50-95 | Precision | Recall | FPS | 参数量 | 结论 |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---|

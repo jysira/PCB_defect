@@ -68,10 +68,10 @@ def benchmark_one(
 def main() -> None:
     parser = argparse.ArgumentParser(description="比较 PyTorch / ONNX / TensorRT 推理延迟与 FPS")
     parser.add_argument("--weights", nargs="+", default=[
-        r"D:\pycharm\pythonProject\PCB_defect\runs\train\PCB_defect_clahe\weights\best.pt",
-        r"D:\pycharm\pythonProject\PCB_defect\runs\train\PCB_defect_clahe\weights\best.onnx",
-        r"D:\pycharm\pythonProject\PCB_defect\runs\train\PCB_defect_clahe\weights\exports_nrxrkkhq\best_fp16.engine",
-        r"D:\pycharm\pythonProject\PCB_defect\runs\train\PCB_defect_clahe\weights\exports_nrxrkkhq\best_int8.engine",
+        r"D:\pycharm\pythonProject\PCB_defect\runs\01_detection\training\PCB_defect_clahe\weights\best.pt",
+        r"D:\pycharm\pythonProject\PCB_defect\runs\01_detection\training\PCB_defect_clahe\weights\best.onnx",
+        r"D:\pycharm\pythonProject\PCB_defect\runs\01_detection\training\PCB_defect_clahe\weights\exports_nrxrkkhq\best_fp16.engine",
+        r"D:\pycharm\pythonProject\PCB_defect\runs\01_detection\training\PCB_defect_clahe\weights\exports_nrxrkkhq\best_int8.engine",
     ], help="可同时给 .pt .onnx .engine")
     parser.add_argument("--imgsz", type=int, default=1024)
     parser.add_argument("--runs", type=int, default=100)

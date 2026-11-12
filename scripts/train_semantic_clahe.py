@@ -21,7 +21,7 @@ def main():
         raise FileNotFoundError(f'Missing dataset configuration: {data}')
     YOLO('yolo26n-sem.pt',task='semantic').train(data=str(data),epochs=args.epochs,
         patience=args.patience,imgsz=args.imgsz,batch=args.batch,optimizer='AdamW',lr0=args.lr,
-        device=args.device,workers=0,seed=42,project=str(ROOT/'runs/semantic_clahe'),name='pcb')
+        device=args.device,workers=0,seed=42,project=str(ROOT/'runs/02_segmentation/clahe'),name='pcb')
 
 
 if __name__ == '__main__':

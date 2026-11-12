@@ -19,7 +19,7 @@ def main():
     parser.add_argument('--split',choices=['val','test'],default='test')
     args = parser.parse_args()
     model = YOLO(args.model,task='semantic')
-    options = dict(imgsz=args.imgsz,device=args.device,project=str(ROOT/'runs/semantic_merged'))
+    options = dict(imgsz=args.imgsz,device=args.device,project=str(ROOT/'runs/02_segmentation/merged'))
     data = args.data
     if args.mode == 'train':
         model.train(data=data,epochs=args.epochs,patience=args.patience,batch=args.batch,workers=0,seed=42,

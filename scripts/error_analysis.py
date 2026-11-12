@@ -45,7 +45,7 @@ def category_for_miss(box: np.ndarray, image: np.ndarray) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="根据 IoU=0.5 匹配，生成漏检/误检错误报告")
-    parser.add_argument("--weights", default="D:/pycharm/pythonProject/PCB_defect/runs/train/PCB_defect_clahe/weights/best.pt")
+    parser.add_argument("--weights", default="D:/pycharm/pythonProject/PCB_defect/runs/01_detection/training/PCB_defect_clahe/weights/best.pt")
     parser.add_argument("--data", default="D:/pycharm/pythonProject/PCB_defect/data/pcb_detection_clahe/dataset.yaml")
     parser.add_argument("--split", default="test", choices=["val", "test"])
     parser.add_argument("--conf", type=float, default=.25)

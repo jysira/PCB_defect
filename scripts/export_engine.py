@@ -16,7 +16,7 @@ PROJECT = Path(r"D:\pycharm\PycharmProjects\PythonProject1\PCB_defect")
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="依次导出 FP16 和 INT8 TensorRT 引擎")
-    parser.add_argument("--weights", default=str(PROJECT / "D:/pycharm/pythonProject/PCB_defect/runs/train/PCB_defect_clahe/weights/best.pt"))
+    parser.add_argument("--weights", default=str(PROJECT / "D:/pycharm/pythonProject/PCB_defect/runs/01_detection/training/PCB_defect_clahe/weights/best.pt"))
     parser.add_argument("--data", default=str(PROJECT / "D:/pycharm/pythonProject/PCB_defect/data/pcb_detection_clahe/dataset.yaml"), help="INT8 校准数据配置，校准只使用 train")
     parser.add_argument("--output-dir", default=None, help="默认在权重目录下新建 exports_* 文件夹")
     parser.add_argument("--imgsz", type=int, default=1024)

@@ -23,7 +23,7 @@ def main() -> None:
     args = parser.parse_args()
     model = YOLO(args.model)
     results = model.train(data=str(Path(args.data).resolve()), epochs=args.epochs, imgsz=args.imgsz, batch=args.batch,
-                          device=args.device, workers=args.workers, project=str(ROOT / "runs" / "train"), name=args.name, seed=args.seed,
+                          device=args.device, workers=args.workers, project=str(ROOT / "runs" / "01_detection/training"), name=args.name, seed=args.seed,
                           pretrained=True, patience=30, cos_lr=True, close_mosaic=10, plots=True, resume=args.resume)
     print(f"训练完成。结果目录: {results.save_dir}")
 

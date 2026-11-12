@@ -9,7 +9,7 @@ from ultralytics import YOLO
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="图像/视频/摄像头实时缺陷检测")
-    parser.add_argument("--weights", default="D:/pycharm/PycharmProjects/PythonProject1/PCB_defect/runs/train/PCB_defect/weights/best.engine", help=".pt、.onnx 或 .engine")
+    parser.add_argument("--weights", default="D:/pycharm/pythonProject/PCB_defect/runs/01_detection/training/PCB_defect_clahe/weights/best.pt", help=".pt、.onnx 或 .engine")
     parser.add_argument("--source", default="C:/Users/曲敬悠/Desktop                              ", help="图片/视频路径、目录，或摄像头编号 0")
     parser.add_argument("--conf", type=float, default=0.25)
     parser.add_argument("--imgsz", type=int, default=1024)
